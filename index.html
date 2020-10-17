@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Event Mouse</title>
+        <meta charset="UTF-8">
+        <style>
+            p {
+                width: 100px;
+                margin: auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <p onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"><span>Highlight me..</span></p>
+
+        <script>
+
+            function mouseOver(mo){
+                const p1 = document.querySelector('p');
+                p1.style.color = 'red';
+            }
+
+            function mouseOut(mu){
+                const p2 = document.getElementsByTagName('p')[0];
+                p2.style.color = 'black';
+            }
+
+        </script>
+    </body>
+</html>
